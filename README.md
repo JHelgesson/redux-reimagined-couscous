@@ -12,7 +12,9 @@ When you run `create-react-app`, it always creates the project with the latest v
 
 ## Länkar
 [redux](https://redux.js.org/)
+
 [redux-thunk](https://github.com/reduxjs/redux-thunk)
+
 [connected-react-router](https://github.com/supasate/connected-react-router)
 
 ## Mappstruktur

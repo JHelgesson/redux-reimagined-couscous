@@ -16,7 +16,7 @@ export const popMessageSuccess = () => ({
     payload: { }
 });
 
-// Action creators
+// Action creators, se redux-thunk
 export const addMessageAction = (message) => {
     return dispatch => {
         dispatch(addMessageSuccess(message));

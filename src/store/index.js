@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
-import Message from './messageReducer';
+import Message from './message/reducer';
+import Route from './route/reducer';
 
 export default combineReducers({
     Message,
+    Route
 });

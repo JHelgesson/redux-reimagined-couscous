@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addMessageAction, popMessageAction } from '../actions/messageAction'
+import { addMessageAction, popMessageAction } from '../store/message/actions';
 import MaterialButton from '../components/MaterialButton';
 import MaterialPopover from '../components/MaterialPopover';
 import '../App.css';
@@ -62,7 +62,8 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => ({
-	message: state.Message,
+  message: state.Message,
+  route: state.Route
 });
 
 const mapDispatchToProps = (dispatch) => {

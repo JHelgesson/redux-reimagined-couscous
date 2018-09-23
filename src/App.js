@@ -22,9 +22,9 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from './store';
 
-import Dashboard from './views/Dashboard';
+import Dashboard from './containers/Dashboard';
 
-const drawerWidth = 240;
+const drawerWidth = 220;
 
 const styles = theme => ({
   root: {
@@ -142,7 +142,7 @@ class App extends Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="title" color="inherit" noWrap className={classes.title}>
-                Dashboard
+                {this.props.route.title}
               </Typography>
               <IconButton color="inherit">
                 <Badge badgeContent={4} color="secondary">
@@ -210,7 +210,9 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({ });
+const mapStateToProps = (state) => ({ 
+  route: state.Route
+});
 const mapDispatchToProps = (dispatch) => { return { } }
 
 export default compose(

@@ -1,6 +1,4 @@
-// Action types
-export const ADD_MESSAGE = 'ADD_MESSAGE';
-export const POP_MESSAGE = 'POP_MESSAGE';
+import { ADD_MESSAGE, POP_MESSAGE } from './types';
 
 // Actions
 export const addMessageSuccess = (message) => ({
